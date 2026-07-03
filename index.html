@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madyan Chowdhury — Engineer &amp; Builder | NASA NCAS 1st Place</title>
+  <meta name="description" content="Madyan Chowdhury builds machines that work — 1st place in the NASA NCAS Robotics Competition with GRIT, a Mars companion rover drilling 200 cm deep at under 20% of the cost. Mechanical engineering student at UCF, builder, and volunteer with 1,895+ service hours." />
+  <meta name="theme-color" content="#0c0a09" />
+
+  <!-- TODO(Madyan): after deploying, replace the URL below with your live GitHub Pages URL,
+       e.g. https://madyan-chowdhury.github.io/REPO-NAME/  (keep the trailing slash) -->
+  <link rel="canonical" href="https://madyan-chowdhury.github.io/" />
+
+  <!-- Open Graph / social cards. TODO(Madyan): og:image must be an ABSOLUTE URL —
+       update the domain to match your live site after deploy. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Madyan Chowdhury — Engineer &amp; Builder" />
+  <meta property="og:description" content="1st place, NASA NCAS Robotics Competition. Builder of GRIT, a Mars companion rover concept with a hybrid rotary-percussive drill reaching 200 cm deep. Mechanical engineering at UCF." />
+  <meta property="og:url" content="https://madyan-chowdhury.github.io/" />
+  <meta property="og:image" content="https://madyan-chowdhury.github.io/grit-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Madyan Chowdhury — Engineer &amp; Builder" />
+  <meta name="twitter:description" content="1st place, NASA NCAS Robotics Competition. Mechanical engineering at UCF. Builder, engineer, and volunteer." />
+  <meta name="twitter:image" content="https://madyan-chowdhury.github.io/grit-1.jpg" />
+
+  <!-- Inline SVG favicon: orange "M" tile -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff5d1f'/%3E%3Cpath d='M8 24V9h3.4l4.6 8.2L20.6 9H24v15h-3.2v-9.2L16.9 22h-1.8l-3.9-7.2V24z' fill='%230c0a09'/%3E%3C/svg%3E" />
+
+  <!-- Fonts: Archivo (display + body) and JetBrains Mono (technical labels).
+       System fallbacks render immediately; swap happens when fonts arrive. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD: Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Madyan Chowdhury",
+    "email": "mailto:madyanchowdhury8@gmail.com",
+    "telephone": "+1-786-901-9977",
+    "url": "https://madyan-chowdhury.github.io/",
+    "jobTitle": "Mechanical Engineering Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Central Florida"
+    },
+    "alumniOf": [
+      { "@type": "HighSchool", "name": "School for Advanced Studies" },
+      { "@type": "CollegeOrUniversity", "name": "Miami Dade College" }
+    ],
+    "award": [
+      "1st Place, NASA NCAS Robotics Competition (2026)",
+      "2nd Place, SECME Engineering Competition (2024–25)",
+      "AP Scholar"
+    ],
+    "knowsAbout": ["Robotics", "Mechanical Engineering", "Prototyping", "Systems Engineering", "C Programming"],
+    "sameAs": [
+      "https://www.linkedin.com/in/madyan-chowdhury-791733363",
+      "https://github.com/Madyan-Chowdhury",
+      "https://ucf.joinhandshake.com/profiles/8k2uv3"
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#work">Skip to main content</a>
+
+  <!-- Decorative: warping blueprint particle field (canvas). aria-hidden, off under reduced-motion / no-JS. -->
+  <canvas class="fx-canvas" id="fx-canvas" aria-hidden="true"></canvas>
+  <!-- Decorative grain overlay -->
+  <div class="fx-grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="#top" class="brand" data-magnetic aria-label="Madyan Chowdhury — back to top">
+      <span class="brand__mark" aria-hidden="true">MC</span>
+      <span class="brand__name">Madyan&nbsp;Chowdhury</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#service">Service</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="site-nav__cta" data-magnetic>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO — EXPLODED ASSEMBLY ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__stage" id="hero-stage" data-parallax-scene>
+        <p class="hero__kicker mono">// Incoming Mechanical Engineering · University of Central Florida</p>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="line" data-depth="0.10"><span class="word">I</span> <span class="word">BUILD</span> <span class="word">MACHINES</span></span>
+          <span class="line line--alt" data-depth="0.18"><span class="word">THAT</span> <span class="word"><em>ACTUALLY</em></span> <span class="word"><em>WORK.</em></span></span>
+        </h1>
+
+        <!-- Decorative exploded-view callouts with dashed leader lines. Purely visual. -->
+        <div class="callouts" aria-hidden="true">
+          <div class="callout callout--a" data-depth="0.4">
+            <span class="callout__num">PART 01</span><span class="callout__label">BUILDER</span>
+          </div>
+          <div class="callout callout--b" data-depth="0.55">
+            <span class="callout__num">PART 02</span><span class="callout__label">ENGINEER</span>
+          </div>
+          <div class="callout callout--c" data-depth="0.7">
+            <span class="callout__num">PART 03</span><span class="callout__label">VOLUNTEER</span>
+          </div>
+        </div>
+
+        <p class="hero__lead" data-depth="0.06">
+          From a <strong>NASA 1st-place Mars rover concept</strong> that drills
+          28&times; deeper than Perseverance, to a robotic hand prototyped over
+          100 hours, to a humanitarian project I founded and ran solo —
+          I take ideas from sketch to working hardware.
+        </p>
+        <div class="hero__actions" data-depth="0.04">
+          <a class="btn btn--solid" href="#work" data-magnetic>See the work</a>
+          <!-- TODO(Madyan): drop your resume PDF into this folder as resume.pdf,
+               then remove the `is-disabled` class and the aria-disabled attribute below. -->
+          <a class="btn btn--outline is-disabled" href="resume.pdf" aria-disabled="true" title="Resume coming soon" data-magnetic>Resume (PDF)</a>
+          <a class="btn btn--ghost" href="#contact" data-magnetic>Get in touch</a>
+        </div>
+      </div>
+
+      <dl class="statband" aria-label="At a glance">
+        <div class="statband__item">
+          <dt>NASA NCAS Robotics</dt>
+          <dd><span class="count" data-count="1" data-suffix="st">1st</span> <span>place</span></dd>
+        </div>
+        <div class="statband__item">
+          <dt>GRIT drill depth vs. Perseverance</dt>
+          <dd><span class="count" data-count="200">200</span> <span>cm vs 7 cm</span></dd>
+        </div>
+        <div class="statband__item">
+          <dt>Associate of Arts</dt>
+          <dd>A.A. <span>before HS diploma</span></dd>
+        </div>
+        <div class="statband__item">
+          <dt>Community service</dt>
+          <dd><span class="count" data-count="1895" data-suffix="+">1,895+</span> <span>hours</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Kinetic ticker band -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>NASA NCAS · 1ST PLACE ✦ GRIT MARS COMPANION ROVER ✦ 200 CM DRILL DEPTH ✦ SECME · 2ND PLACE ✦ ROBOTIC HAND ✦ 1,895+ SERVICE HOURS ✦ ASSOCIATE OF ARTS ✦ </span>
+        <span>NASA NCAS · 1ST PLACE ✦ GRIT MARS COMPANION ROVER ✦ 200 CM DRILL DEPTH ✦ SECME · 2ND PLACE ✦ ROBOTIC HAND ✦ 1,895+ SERVICE HOURS ✦ ASSOCIATE OF ARTS ✦ </span>
+      </div>
+    </div>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <header class="section__head">
+        <p class="section__index mono" data-scramble>01</p>
+        <h2 class="section__title" data-glitch="Engineering &amp; Robotics">Engineering &amp; Robotics</h2>
+      </header>
+
+      <!-- GRIT — featured PAYLOAD DEPLOY explosion -->
+      <article class="feature reveal reveal--explode" data-tilt aria-labelledby="grit-title">
+        <div class="feature__scanline" aria-hidden="true"></div>
+        <div class="feature__text">
+          <p class="feature__tag mono"><span class="feature__award glitch-badge" data-glitch="🏆 1st Place">🏆 1st Place</span> NASA NCAS Robotics Competition · 2026</p>
+          <h3 class="feature__title" id="grit-title">GRIT — Mars Companion Rover</h3>
+          <p class="feature__body">
+            Perseverance can only sample the top <strong>7&nbsp;cm</strong> of Martian soil —
+            too shallow for the purest science. Our answer: GRIT, a companion rover
+            built to follow Perseverance and pull deeper, cleaner samples.
+          </p>
+          <p class="feature__body">
+            I contributed to the technical design of its
+            <strong>hybrid rotary-percussive drill</strong>, reaching
+            <strong>200&nbsp;cm</strong> — 28&times; deeper — at
+            <strong>under 20% of the cost</strong>. With a 7-person team at Miami Dade
+            College, we delivered a <strong>21-section business proposal</strong>,
+            built a working prototype, and presented to judges. We took
+            <strong>1st place</strong>.
+          </p>
+          <ul class="spec" aria-label="GRIT key specs">
+            <li><span class="spec__k mono">Drill depth</span><span class="spec__v">200 cm (vs. 7 cm)</span></li>
+            <li><span class="spec__k mono">Cost target</span><span class="spec__v">&lt; 20% of Perseverance's sampling system</span></li>
+            <li><span class="spec__k mono">Deliverables</span><span class="spec__v">Working prototype + 21-section proposal</span></li>
+            <li><span class="spec__k mono">Team</span><span class="spec__v">7 engineers · Miami Dade College</span></li>
+          </ul>
+          <ul class="chips" aria-label="Skills used">
+            <li>Technical Design</li>
+            <li>Systems Engineering</li>
+            <li>Prototyping</li>
+            <li>Technical Writing</li>
+          </ul>
+        </div>
+        <div class="feature__media">
+          <div class="gallery gallery--grit" data-gallery="GRIT Mars companion rover">
+            <button class="gallery__item gallery__item--lead" type="button" style="--ex:-60px;--ey:-40px;--er:-5deg">
+              <span class="gallery__pn mono">01</span>
+              <img src="grit-1.jpg" alt="GRIT Mars companion rover prototype" loading="lazy" width="1200" height="900" />
+            </button>
+            <button class="gallery__item" type="button" style="--ex:70px;--ey:-30px;--er:6deg">
+              <span class="gallery__pn mono">02</span>
+              <img src="grit-2.jpg" alt="GRIT rover prototype, top view showing chassis layout" loading="lazy" width="1200" height="900" />
+            </button>
+            <button class="gallery__item" type="button" style="--ex:-50px;--ey:20px;--er:4deg">
+              <span class="gallery__pn mono">03</span>
+              <img src="grit-3.jpg" alt="GRIT rover electronics and control wiring" loading="lazy" width="1200" height="900" />
+            </button>
+            <button class="gallery__item" type="button" style="--ex:40px;--ey:50px;--er:-6deg">
+              <span class="gallery__pn mono">04</span>
+              <img src="grit-4.jpg" alt="Close-up detail of the GRIT rover drill assembly" loading="lazy" width="1200" height="900" />
+            </button>
+            <button class="gallery__item" type="button" style="--ex:-70px;--ey:60px;--er:7deg">
+              <span class="gallery__pn mono">05</span>
+              <img src="grit-5.jpg" alt="GRIT rover during the build process" loading="lazy" width="1200" height="900" />
+            </button>
+            <button class="gallery__item" type="button" style="--ex:60px;--ey:35px;--er:-4deg">
+              <span class="gallery__pn mono">06</span>
+              <img src="grit-6.jpg" alt="GRIT rover internal wiring and components" loading="lazy" width="1200" height="900" />
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <div class="workgrid">
+        <!-- Robotic Hand -->
+        <article class="card reveal reveal--explode" data-tilt aria-labelledby="hand-title">
+          <p class="card__tag mono"><span class="card__award">🥈 2nd Place</span> SECME Engineering Competition · 2024–25</p>
+          <h3 class="card__title" id="hand-title">Robotic Hand</h3>
+          <p class="card__body">
+            Led a team to <strong>2nd place</strong> at the SECME Engineering Competition.
+            Designed and built a functional robotic-hand prototype across roughly
+            <strong>100 hours</strong> of hands-on engineering — mechanism design,
+            build, and iteration until it gripped.
+          </p>
+          <ul class="chips" aria-label="Skills used">
+            <li>Team Lead</li>
+            <li>Mechanism Design</li>
+            <li>Rapid Prototyping</li>
+          </ul>
+          <div class="gallery gallery--hand" data-gallery="SECME robotic hand">
+            <button class="gallery__item" type="button" style="--ex:-40px;--ey:-30px;--er:5deg"><span class="gallery__pn mono">01</span><img src="hand-1.jpg" alt="Team presenting the robotic hand at the SECME competition" loading="lazy" width="1200" height="900" /></button>
+            <button class="gallery__item" type="button" style="--ex:45px;--ey:-25px;--er:-5deg"><span class="gallery__pn mono">02</span><img src="hand-2.jpg" alt="Robotic hand prototype during assembly" loading="lazy" width="1200" height="900" /></button>
+            <button class="gallery__item" type="button" style="--ex:-35px;--ey:25px;--er:-4deg"><span class="gallery__pn mono">03</span><img src="hand-3.jpg" alt="Detail of the robotic hand finger linkages" loading="lazy" width="1200" height="900" /></button>
+            <button class="gallery__item" type="button" style="--ex:50px;--ey:30px;--er:6deg"><span class="gallery__pn mono">04</span><img src="hand-4.jpg" alt="Robotic hand actuation mechanism" loading="lazy" width="1200" height="900" /></button>
+            <button class="gallery__item" type="button" style="--ex:-55px;--ey:-10px;--er:-6deg"><span class="gallery__pn mono">05</span><img src="hand-5.jpg" alt="Robotic hand gripper prototype" loading="lazy" width="1200" height="900" /></button>
+            <button class="gallery__item" type="button" style="--ex:30px;--ey:45px;--er:4deg"><span class="gallery__pn mono">06</span><img src="hand-6.jpg" alt="Robotic hand control wiring" loading="lazy" width="1200" height="900" /></button>
+            <button class="gallery__item" type="button" style="--ex:-25px;--ey:55px;--er:7deg"><span class="gallery__pn mono">07</span><img src="hand-7.jpg" alt="Completed robotic hand prototype" loading="lazy" width="1200" height="900" /></button>
+          </div>
+        </article>
+
+        <!-- Coursework -->
+        <article class="card reveal reveal--explode" data-tilt aria-labelledby="course-title">
+          <p class="card__tag mono">Dual Enrollment · Miami Dade College</p>
+          <h3 class="card__title" id="course-title">Engineering Foundations, Two Years Early</h3>
+          <p class="card__body">
+            Earned an <strong>Associate of Arts</strong> about a month before my high
+            school diploma, through dual enrollment at Miami Dade College:
+            <strong>"C" for Engineers</strong> (C programming),
+            <strong>AP Calculus AB</strong>, and
+            <strong>General Chemistry I &amp; II with labs</strong>.
+            College-level engineering math, programming, and lab discipline —
+            done before day one at UCF.
+          </p>
+          <ul class="chips" aria-label="Coursework">
+            <li>C Programming</li>
+            <li>Calculus</li>
+            <li>Chemistry + Labs</li>
+            <li>Associate of Arts</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reverse ticker -->
+    <div class="ticker ticker--rev" aria-hidden="true">
+      <div class="ticker__track">
+        <span>SKETCH → CAD → PROTOTYPE → TEST → SHIP ✦ FROM SKETCH TO WORKING HARDWARE ✦ BUILT WITH MY HANDS ✦ </span>
+        <span>SKETCH → CAD → PROTOTYPE → TEST → SHIP ✦ FROM SKETCH TO WORKING HARDWARE ✦ BUILT WITH MY HANDS ✦ </span>
+      </div>
+    </div>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--band" id="skills">
+      <header class="section__head">
+        <p class="section__index mono" data-scramble>02</p>
+        <h2 class="section__title" data-glitch="Tools &amp; Skills">Tools &amp; Skills</h2>
+      </header>
+      <div class="skills reveal">
+        <div class="skills__group">
+          <h3 class="skills__label mono">Build</h3>
+          <ul class="chips chips--lg">
+            <li>SolidWorks</li>
+            <li>Rapid Prototyping</li>
+            <li>Electronics &amp; Wiring</li>
+            <li>Soldering</li>
+            <li>Wire Crimping</li>
+            <li>Assembly</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__label mono">Engineer</h3>
+          <ul class="chips chips--lg">
+            <li>Systems Engineering</li>
+            <li>CAD &amp; Technical Design</li>
+            <li>Mechanism Design</li>
+            <li>C Programming</li>
+            <li>Calculus</li>
+            <li>Chemistry Lab Methods</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__label mono">Lead</h3>
+          <ul class="chips chips--lg">
+            <li>Team Leadership</li>
+            <li>Technical Writing &amp; Proposals</li>
+            <li>Presenting to Judges</li>
+            <li>Fundraising &amp; Logistics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICE ============ -->
+    <section class="section" id="service">
+      <header class="section__head">
+        <p class="section__index mono" data-scramble>03</p>
+        <h2 class="section__title" data-glitch="Service &amp; Leadership">Service &amp; Leadership</h2>
+      </header>
+
+      <div class="workgrid">
+        <article class="card card--wide reveal reveal--explode" data-tilt aria-labelledby="empower-title">
+          <p class="card__tag mono">Founder · 2024–25 · Bangladesh</p>
+          <h3 class="card__title" id="empower-title">Empowering Lives, One Step at a Time</h3>
+          <p class="card__body">
+            A humanitarian project I <strong>founded, funded, and ran solo</strong> —
+            delivering care packages of food, hygiene supplies, and daily necessities
+            to underprivileged families, elderly individuals, and people with
+            disabilities in rural Bangladesh. Built in honor of my late grandfather.
+          </p>
+          <p class="card__body">
+            I'm training my siblings to carry it forward, and I plan to launch a
+            Florida-based version at UCF.
+          </p>
+          <ul class="chips" aria-label="Roles">
+            <li>Founder</li>
+            <li>Fundraising</li>
+            <li>Logistics</li>
+            <li>International</li>
+          </ul>
+        </article>
+
+        <article class="card reveal reveal--explode" data-tilt aria-labelledby="tutor-title">
+          <p class="card__tag mono">2020 – Dec 2025 · 1,895+ total hours</p>
+          <h3 class="card__title" id="tutor-title">Tutoring &amp; Community</h3>
+          <p class="card__body">
+            <strong>500+ hours</strong> tutoring grades 1–5 in reading, writing, and
+            math (2022 – Dec 2025). <strong>800+ hours</strong> of food service at my
+            local mosque since 2020. <strong>1,895+ service hours</strong> total,
+            across communities that raised me.
+          </p>
+          <ul class="chips" aria-label="Areas">
+            <li>Tutoring 1–5</li>
+            <li>Food Service</li>
+            <li>Mentorship</li>
+          </ul>
+        </article>
+
+        <article class="card reveal reveal--explode" data-tilt aria-labelledby="fsp-title">
+          <p class="card__tag mono">2025 – Present</p>
+          <h3 class="card__title" id="fsp-title">Florida Student Power</h3>
+          <p class="card__body">
+            Student leader in civic engagement and advocacy — organizing and
+            representing youth voices in the community.
+          </p>
+          <ul class="chips" aria-label="Areas">
+            <li>Advocacy</li>
+            <li>Organizing</li>
+            <li>Civic Leadership</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--band" id="about">
+      <header class="section__head">
+        <p class="section__index mono" data-scramble>04</p>
+        <h2 class="section__title" data-glitch="About">About</h2>
+      </header>
+      <div class="about reveal">
+        <p class="about__big">
+          I'm a builder at heart. Give me a problem I can put my hands on and
+          I'll figure it out — that's been true from robotics competitions to
+          care packages shipped across the world.
+        </p>
+        <p>
+          I graduated from the <strong>School for Advanced Studies</strong> — ranked
+          #1 high school in South Florida — while earning an
+          <strong>Associate of Arts from Miami Dade College</strong> about a month
+          before my high school diploma. This fall I start engineering at the
+          <strong>University of Central Florida</strong>.
+        </p>
+        <p>
+          Outside the shop, service is the throughline. I've put in over
+          <strong>1,895 hours</strong> giving back — founding a humanitarian project
+          that ships care packages to families in rural Bangladesh, tutoring kids in
+          reading and math, and feeding my community at my local mosque. I keep the
+          people, habits, and inputs around me positive — what surrounds you shapes
+          who you become.
+        </p>
+        <ul class="chips chips--lg" aria-label="Credentials">
+          <li>University of Central Florida</li>
+          <li>A.A., Miami Dade College</li>
+          <li>AP Scholar</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact">
+      <header class="section__head">
+        <p class="section__index mono" data-scramble>05</p>
+        <h2 class="section__title" data-glitch="Let's build something">Let's build something</h2>
+      </header>
+      <div class="contact reveal">
+        <p class="contact__lead">
+          I'm always looking to connect with <strong>builders, engineers, and students</strong>
+          chasing the same things I am &mdash; real hardware, hard problems, and work that
+          actually matters. If you're pursuing similar goals, working on something ambitious,
+          or just want to trade ideas, reach out.
+        </p>
+        <div class="contact__cards">
+          <a class="contact__card" href="mailto:madyanchowdhury8@gmail.com" data-magnetic>
+            <span class="contact__label mono">Email</span>
+            <span class="contact__value">madyanchowdhury8@gmail.com</span>
+          </a>
+          <a class="contact__card" href="tel:+17869019977" data-magnetic>
+            <span class="contact__label mono">Phone</span>
+            <span class="contact__value">786-901-9977</span>
+          </a>
+        </div>
+        <div class="contact__links">
+          <a class="btn btn--solid" href="https://www.linkedin.com/in/madyan-chowdhury-791733363" target="_blank" rel="noopener" data-magnetic>LinkedIn</a>
+          <a class="btn btn--outline" href="https://ucf.joinhandshake.com/profiles/8k2uv3" target="_blank" rel="noopener" data-magnetic>Handshake</a>
+          <a class="btn btn--outline" href="https://github.com/Madyan-Chowdhury" target="_blank" rel="noopener" data-magnetic>GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="mono">© <span id="year">2026</span> Madyan Chowdhury · Designed &amp; shipped as static HTML on GitHub Pages</p>
+    <a class="site-footer__top" href="#top" data-magnetic>Back to top ↑</a>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+      <figcaption class="lightbox__caption mono" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next photo">&#8250;</button>
+  </div>
+
+  <script src="main.js" defer></script>
+  <script src="effects.js" defer></script>
+</body>
+</html>
