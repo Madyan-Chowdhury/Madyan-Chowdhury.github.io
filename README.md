@@ -13,6 +13,9 @@ effects.js   — exploded flourish: custom cursor, magnetic buttons, canvas part
                field, 3D tilt, glitch headers, count-up, parallax. Decorative only;
                bails out entirely on prefers-reduced-motion & touch.
 grit-*.jpg   — GRIT Mars rover photos (NASA NCAS, 1st place)
+coffee-*.jpg — Automated iced coffee machine (Summer 2026 internship).
+               Sources live in the vault at "Ice Coffee/"; these are rotated
+               upright and downscaled to 1600px long edge for web.
 hand-*.jpg   — SECME robotic hand photos (2nd place)
 _backup_original/ — the previous version of the site (not deployed-critical; can be excluded)
 ```
@@ -32,7 +35,7 @@ _backup_original/ — the previous version of the site (not deployed-critical; c
 2. From this folder:
    ```sh
    git init
-   git add index.html style.css main.js effects.js README.md grit-*.jpg hand-*.jpg
+   git add index.html style.css main.js effects.js README.md grit-*.jpg hand-*.jpg coffee-*.jpg
    git commit -m "Portfolio site"
    git branch -M main
    git remote add origin https://github.com/Madyan-Chowdhury/REPO-NAME.git

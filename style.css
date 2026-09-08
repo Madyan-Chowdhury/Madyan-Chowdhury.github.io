@@ -311,7 +311,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   line-height: 1.05;
 }
 
-/* ---------- Feature (GRIT case study) ---------- */
+/* ---------- Feature (case studies: GRIT, iced coffee machine) ---------- */
 .feature {
   display: grid;
   gap: clamp(1.8rem, 4vw, 3.2rem);
@@ -332,6 +332,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 @media (min-width: 900px) {
   .feature { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; }
 }
+.feature + .feature { margin-top: 1.5rem; }
 .feature__tag { color: var(--ink-dim); margin-bottom: 1rem; }
 .feature__award, .card__award {
   color: var(--amber);
@@ -411,11 +412,12 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   transition: transform 0.3s ease;
 }
 .gallery__item:hover img { transform: scale(1.05); }
-.gallery--grit .gallery__item--lead {
+.gallery--lead .gallery__item--lead {
   grid-column: 1 / -1;
 }
-.gallery--grit .gallery__item--lead img { aspect-ratio: 16 / 9; }
+.gallery--lead .gallery__item--lead img { aspect-ratio: 16 / 9; }
 .gallery--hand { margin-top: 1.4rem; grid-template-columns: repeat(4, 1fr); }
+.gallery--coffee { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 700px) {
   .gallery--hand { grid-template-columns: repeat(3, 1fr); }
 }
@@ -831,13 +833,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   letter-spacing: 0.1em;
 }
 /* GRIT gallery parts "explode" apart on reveal, snap together on hover */
-.has-js .gallery--grit .gallery__item {
+.has-js .gallery--lead .gallery__item {
   transition: transform 0.6s cubic-bezier(.2,.7,.2,1), border-color 0.2s;
 }
-.has-js .feature.is-visible .gallery--grit:not(:hover) .gallery__item {
+.has-js .feature.is-visible .gallery--lead:not(:hover) .gallery__item {
   transform: translate(calc(var(--ex, 0) * 0.38), calc(var(--ey, 0) * 0.38)) rotate(calc(var(--er, 0) * 0.55));
 }
-.has-js .gallery--grit:hover .gallery__item { transform: none; }
+.has-js .gallery--lead:hover .gallery__item { transform: none; }
 
 /* Count-up: reserve space so layout doesn't jump */
 .count { font-variant-numeric: tabular-nums; }
@@ -859,6 +861,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   .glitch-on[data-glitch]::before,
   .glitch-on[data-glitch]::after { display: none !important; }
   .hero__title.is-armed .word { opacity: 1 !important; transform: none !important; }
-  .has-js .feature.is-visible .gallery--grit:not(:hover) .gallery__item { transform: none !important; }
+  .has-js .feature.is-visible .gallery--lead:not(:hover) .gallery__item { transform: none !important; }
   .has-cursor, .has-cursor a, .has-cursor button { cursor: auto !important; }
 }
